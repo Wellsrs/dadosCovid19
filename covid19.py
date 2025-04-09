@@ -6,7 +6,7 @@ import streamlit as st
 
 df = pd.read.csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv")
 
-df = df.rename(columns = {'newDeaths' : 'Novos Óbitos', 'newCases' : 'Novos Casos', 'deaths_per_100k_inhabitants' : 'Óbitos por 100 mil habitantes', 'totalCases_per_100k_inhabitants' : 'Casos por 100 mil habitantes'
+df = df.rename(columns = {'newDeaths' : 'Novos Óbitos', 'newCases' : 'Novos Casos', 'deaths_per_100k_inhabitants' : 'Óbitos por 100 mil habitantes', 'totalCases_per_100k_inhabitants' : 'Casos por 100 mil habitantes'})
 
 estados = list(df['state'].unique())
 state = st.sidebar.selectbox('Selecione o estado', estados)
