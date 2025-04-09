@@ -1,5 +1,6 @@
 import pandas as pd
-from plotly.express import * as px
+from plotly.express import *
+plotly.express as px
 import streamlit as st
 
 #streamlit run codigoBase.py
