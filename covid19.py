@@ -16,7 +16,7 @@ column = st.sidebar.selectbox('Qual tipo de informação ?', colunas)
 
 df = df[df['state'] == state] #seleção de linhas que pertencem ao estado
 
-fig = px.line(df, x="date", y=column, title=column + ' - ' + state
+fig = px.line(df, x="date", y=column, title=column + ' - ' + state)
 fig.update_layout(xaxis_title='Data', yaxis_title=column.upper(), title = {'x':0.5})
 
 st.title('DADOS COVID19 BRASIL')
@@ -26,4 +26,3 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.caption('Os dados foram obtidos a partir do site https://github.com/wcota/covid19br')
 
-#criar requirements.txt e inserir plotly==5.8.0
